@@ -1,0 +1,137 @@
+/* 1. Fundo da página */
+body {
+    background-color: #f4f0ff;
+    /* lilás clarinho */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Título principal */
+h1 {
+    text-align: center;
+    color: #3b4cca;
+    /* azul */
+    font-family: Arial, sans-serif;
+}
+
+/* Subtítulos */
+h2 {
+    color: #7b68ee;
+    /* lilás */
+}
+
+/* 3. Parágrafos */
+p {
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* 4. Card */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px rgba(123, 104, 238, 0.2);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 6px solid #7b68ee;
+}
+
+/* 5. Menu horizontal */
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    background-color: #7b68ee;
+    /* lilás */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+/* 6. Links */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #cce0ff;
+    /* azul claro */
+}
+
+a:visited {
+    color: #e6e6fa;
+    /* lilás claro */
+}
+
+/* 7. Tabela */
+#tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#tabela-dados th,
+#tabela-dados td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+#tabela-dados tr:nth-child(even) {
+    background-color: #f4f0ff;
+    /* lilás suave */
+}
+
+#tabela-dados th {
+    background-color: #3b4cca;
+    /* azul */
+    color: white;
+}
+
+/* 8. Flexbox */
+#container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#container-flex>* {
+    flex: 1;
+}
+
+/* 9. Responsividade */
+@media (max-width: 600px) {
+    #container-flex {
+        flex-direction: column;
+    }
+}
+
+/* 10. Botão */
+.btn {
+    background-color: #7b68ee;
+    /* lilás */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #3b4cca;
+    /* azul */
+}
